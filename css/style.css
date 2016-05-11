@@ -157,8 +157,6 @@ li a:hover {
   border-bottom-right-radius: 50px;
 }
 
-<<<<<<< Updated upstream:style.css
-=======
 footer {
   max-width: 100%;
   display: flex;
@@ -173,9 +171,22 @@ footer a {
   color: navy;
 }
 
->>>>>>> Stashed changes:css/style.css
 .hiddenNav {
   display: none;
+}
+
+#resume {
+  font-size: 10px;
+  text-align: left;
+}
+
+#resume h1 {
+  font-size: 20px;
+}
+
+#resume p {
+  text-align: left;
+  border-style: none;
 }
 
 @media screen and (max-width: 640px) {
@@ -194,5 +205,10 @@ footer a {
   display: block;
   font-size: 16px;
   text-align: left;
+}
+footer {
+  font-size: .5em;
+  display: flex;
+  justify-content: space-between;
 }
 }
