@@ -157,8 +157,35 @@ li a:hover {
   border-bottom-right-radius: 50px;
 }
 
+footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20%;
+  padding-top: 5%;
+}
+
+footer a {
+  border-style: none;
+  font-size: 1em;
+}
+
 .hiddenNav {
   display: none;
+}
+
+#resume {
+  font-size: 10px;
+  text-align: left;
+}
+
+#resume h1 {
+  font-size: 20px;
+}
+
+#resume p {
+  text-align: left;
+  border-style: none;
 }
 
 @media screen and (max-width: 640px) {
@@ -177,5 +204,8 @@ li a:hover {
   display: block;
   font-size: 16px;
   text-align: left;
+}
+footer {
+  font-size: .5em;
 }
 }
