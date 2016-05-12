@@ -1,0 +1,109 @@
+#topLeft {
+  font-size: 20px;
+  border-style: dashed;
+  color: #000096;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 15%;
+}
+
+#topRight {
+  position: absolute;
+  color: white;
+  z-index: 100;
+  width: 35%;
+  margin-left: 1em;
+  margin-top: 1em;
+  font-size: 500%;
+  border-style: dashed;
+  padding: .6em;
+  max-width: 100%;
+  max-width: 100%;
+}
+
+#aboutMe {
+  width: 76.5%;
+  border-style: dashed;
+  padding: .6em;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  z-index: 1;
+  padding: 1.5em;
+}
+
+.JMK {
+  color: #000096;
+  font-size: 20px;
+  padding: 5%;
+  margin-left: 5%;
+  margin-right: 15%;
+}
+
+.Stockholm {
+  color: #000096;
+  font-size: 20px;
+  margin-right: 40%;
+}
+.duoPic {
+  height: 63%;
+  width: 63%;
+  display: flex;
+  justify-content: space-between;;
+}
+#socialMe {
+  font-size: 220%;
+  font-style: normal;
+  color: #000096;
+}
+.socialIcon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.5em;
+}
+.socialIcon a {
+  color: #000096;
+}
+.hiddenNav {
+  display: none;
+}
+.nwlocations-body {
+  width: 80%;
+  margin-left: 5%;
+}
+
+#nwlocations {
+  font-size: 10px;
+}
+
+#nwlocations h1 {
+  font-size: 20px;
+}
+
+#nwlocations h2 {
+  margin-left: 15%;
+  margin-right: 25%;
+}
+
+@media screen and (max-width: 640px) {
+
+aside {
+  display: none;
+}
+#topRight {
+  border-style: none;
+  margin: 0;
+  font-size: 250%;
+}
+#aboutMe {
+  padding: .8em;
+}
+.hiddenNav {
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  margin-right: 16%;
+}
