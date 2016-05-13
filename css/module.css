@@ -20,8 +20,8 @@
   border-style: dashed;
   padding: .6em;
   max-width: 100%;
-  max-width: 100%;
 }
+
 
 #aboutMe {
   width: 76.5%;
@@ -41,6 +41,11 @@
   padding: 5%;
   margin-left: 5%;
   margin-right: 15%;
+}
+
+.JMK cite {
+  color: #000096;
+  font-size: 80%;
 }
 
 .Stockholm {
@@ -74,10 +79,17 @@
   width: 80%;
   margin-left: 5%;
 }
+#chelsea {
+  height: 50%;
+  width: 50%;
+  margin-left: 15%;
+}
 
 #nwlocations {
   font-size: 10px;
+  margin-left: 10%;
 }
+
 
 #nwlocations h1 {
   font-size: 20px;
@@ -86,6 +98,19 @@
 #nwlocations h2 {
   margin-left: 15%;
   margin-right: 25%;
+}
+
+#nwlocations img {
+  width: 100%;
+
+}
+
+.greyDivide {
+  width: 81%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 3%;
+  background-color: grey;
 }
 
 @media screen and (max-width: 640px) {
@@ -106,4 +131,5 @@ aside {
   font-size: 16px;
   text-align: left;
   margin-right: 16%;
+}
 }

@@ -21,9 +21,14 @@ main {
   justify-content: space-between;
   text-align: center;
 }
+cite {
+  color: indianred;
+  font-size: 200%;
+  padding: 3%;
+}
 img {
-  max-width: 80%;
-  max-height: 80%;
+  width: 80%;
+  height: 80%;
   z-index: 1;
   border-style: double;;
   color: indianred;
@@ -79,4 +84,31 @@ li a:hover {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+}
+form {
+  padding: 5%;
+  padding-left: 0;
+  margin-right: 15%;
+  color: #52a470;
+  font-family: monospace;
+}
+fieldset {
+  padding: 5%;
+}
+legend {
+  font-size: 200%;
+}
+input {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+label {
+  font-size: 150%;
+  padding-left: 42%;
+  padding-right: 50%;
+}
+textarea {
+  margin-top: 3%;
+  margin-left: 42%;
+  margin-right: 50%;
 }
