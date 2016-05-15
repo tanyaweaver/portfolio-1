@@ -11,22 +11,6 @@ nwLocations.prototype.toHtml = function() {
   return compiledTemplate;
 };
 
-// function nwLocations (ele) { JQUERY USEAGE COMMENTED ON
-//   this.cityName = ele.cityName;
-//   this.cityImg = ele.cityImg;
-//   this.category = ele.category;
-//   this.body = ele.body;
-// }
-
-// nwLocations.prototype.toHtml = function () {
-//   var $newLocation = $('article.template').clone();
-//   $newLocation.find('article.template').attr('data-category', this.category);
-//   $newLocation.find('h1').text(this.cityName);
-//   $newLocation.find('h2').text(this.body);
-//   $newLocation.find('.nwlocations-body').html(this.cityImg);
-//   $newLocation.removeClass('template');
-//   return $newLocation;
-// };
 myNWLocations.forEach(function(element) {
   nwDestinations.push(new nwLocations(element));
 });
@@ -34,11 +18,6 @@ myNWLocations.forEach(function(element) {
 nwDestinations.forEach(function(a) {
   $('#nwlocations').append(a.toHtml());
 });
-
-// var appTemplate = $('#nwlocations-template').html();
-// var compiledTemplate = Handlebars.compile(appTemplate);
-// var compiledMyNWLocations = compiledTemplate(this);
-// $('#app').append(compiledMyNWLocations);
 
 handleLeftDivAbout = function() {
 
@@ -57,6 +36,7 @@ handleLeftDiv = function() {
     $('.duoPic').toggle();
     $('.JMK').toggle();
     $('.Stockholm').toggle();
+    $('html,body').scrollTop(0);
     $('main').fadeIn('.nwlocations-body');
   });
   $('.mainNav').click();
