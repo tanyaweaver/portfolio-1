@@ -1,3 +1,38 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Champagne Web Pages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/icon.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/module.css">
+  <script id="myPortfolio-template" type="text/x-handlebars-template">
+      <article class="template" data-category=" ">
+      <header>
+        <h1>{{projectName}}</h1>
+        <h2>{{projectBio}}</h2>
+      </header>
+      <section class="portfolio-body">{{{projectImg}}}</section>
+      <cite id="">{{projectSite}}</cite>
+    </article>
+  </script>
+</head>
+<body>
+  <div id="socialMe">
+    <p>Hello!  Feel free to follow me on Instagram, and review my LinkedIn or Github pages.</p>
+  </div>
+  <div class="socialIcon">
+    <a href="https://www.facebook.com/seanchampagne" class="icon-facebook2"></a>
+    <a href="https://www.instagram.com/seanchampagne/" class="icon-instagram"></a>
+    <a href="https://twitter.com/1MrChampagne" class="icon-twitter"></a>
+    <a href="https://www.linkedin.com/in/seanchampagne" class="icon-linkedin"></a>
+    <a href="https://github.com/Champagne91" class="icon-github"></a>
+  </div>
+  <div id='app'></div>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="vendors/handlebars-v4.0.5.js"></script>
+  </main>
+  <script src="script/portfolio.js"></script>
+  <script src="script/app.js"></script>
+</body>
 </html>

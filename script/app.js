@@ -1,6 +1,11 @@
 var nwDestinations = [];
+var myPortfolioArray = [];
 
 function nwLocations(ele) { //HANDLEBAR USAGE NOW USED
+  for (key in ele) this[key] = ele[key];
+};
+
+function myPortfolio(ele) {
   for (key in ele) this[key] = ele[key];
 };
 
@@ -11,12 +16,26 @@ nwLocations.prototype.toHtml = function() {
   return compiledTemplate;
 };
 
+portfolio.prototype.toHtml = function() {
+  var $source = $('#myPortfolio-template').html();
+  var template = Handlebars.compile($source);
+  return template(this);
+};
+
 myNWLocations.forEach(function(element) {
   nwDestinations.push(new nwLocations(element));
 });
 
+myPortfolio.forEach(function(element) {
+  myPortfolioArray.push(new portfolio(element));
+});
+
 nwDestinations.forEach(function(a) {
   $('#nwlocations').append(a.toHtml());
+});
+
+myPortfolioArray.forEach(function(a) {
+  $('#myPortfolio').append(a.toHtml());
 });
 
 handleLeftDivAbout = function() {
