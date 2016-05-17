@@ -1,18 +1,11 @@
 var nwDestinations = [];
 var myPortfolioArray = [];
 var locationView = {};
-
-locationView.initIndexPage = function() {
-  nwLocations.all.forEach(function(a) {
-    $('#nwlocations').append(a.toHtml($('#nwlocations-template')));
-  });
-};
+nwLocations.all = [];
 
 function nwLocations(ele) { //HANDLEBAR USAGE NOW USED
   for (key in ele) this[key] = ele[key];
 };
-
-nwLocations.all = [];
 
 nwLocations.prototype.toHtml = function() {
   var $source = $('#nwlocations-template').html();
@@ -20,6 +13,7 @@ nwLocations.prototype.toHtml = function() {
   var compiledTemplate = template(this);
   return compiledTemplate;
 };
+
 nwLocations.loadAll = function(data) {
   data.forEach(function(element) {
     nwLocations.all.push(new nwLocations(element));
@@ -44,11 +38,19 @@ nwLocations.fetchAll = function() {
   } else {
     console.log('hi');
     $.getJSON('/data/locations.json', function(data) {
+      console.log('yolo');
       nwLocations.loadAll(data);
       localStorage.locations = JSON.stringify(data);
       locationView.initIndexPage();
     });
   }
+};
+
+locationView.initIndexPage = function() {
+  console.log('yolo');
+  nwLocations.all.forEach(function(a) {
+    $('#nwlocations').append(a.toHtml($('#nwlocations-template')));
+  });
 };
 
 // function myPortfolio(ele) {
