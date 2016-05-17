@@ -63,6 +63,7 @@
     <div class="greyDivide">
       <h1>Best Destinations in the Pacific Northwest</h1>
       <section id="nwlocations"></section>
+      <section id="numTotal"><dt>Total Words:</dt><dd class="numTotalClass"></dd></section>
     </div>
     <div id="socialMe">
       <p>Hello!  Feel free to follow me on Instagram, and review my LinkedIn or Github pages.</p>
@@ -86,6 +87,6 @@
     </main> -->
     <script src="script/locations.js"></script>
     <script src="script/app.js"></script>
-    <script> nwLocations.fetchAll(); </script>
+    <script> nwLocations.fetchAll(locationView.initIndexPage); </script>
   </body>
 </html>

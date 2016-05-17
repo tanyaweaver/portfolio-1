@@ -31,7 +31,7 @@ var myNWLocations = [
     cityName:     'Kingston',
     body:         'Jamaica?  No--Washington.  A small port town on the Kitsap peninsula with tremendous charm and natural beauty.',
     category:     'town',
-    cityImg:      '<img src="file:///Users/seanchampagne/Desktop/Screen%20Shot%202016-04-28%20at%209.11.49%20PM.png" >',
+    cityImg:      '<img src="kingston.png" >',
     cityCite:     'Apple Tree Cove',
   },
   {

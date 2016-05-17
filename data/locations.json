@@ -18,7 +18,7 @@
       "body":         "Quaint island community a 30 minute ferry ride away from the heart of downtown Seattle.  Explore its beauty on a sunny day and youll begin truly to appreciate the beautiful Puget Sound and Pacific Northwest.",
       "category":     "town",
       "cityImg":      "<img src=\"https:\/\/scontent.xx.fbcdn.net/v/t1.0-9/521956_3469022815978_2051955190_n.jpg?oh=aeb4c21803e48e5d8de922ce579bbf33&oe=57A01CA9\" >",
-      "cityCite":     "sailing with my husband and father-in-law off the coast of Bainbridge Island",
+      "cityCite":     "sailing with my husband and father-in-law off the coast of Bainbridge Island"
     },
     {
       "cityName":     "Victoria",
@@ -31,7 +31,7 @@
       "cityName":     "Kingston",
       "body":         "Jamaica?  No--Washington.  A small port town on the Kitsap peninsula with tremendous charm and natural beauty.",
       "category":     "town",
-      "cityImg":      "<img src=\"file:\/\/\/Users\/seanchampagne\/Desktop\/Screen%20Shot%202016-04-28%20at%209.11.49%20PM.png/\" >",
+      "cityImg":      "<img src=\"kingston.png\" >",
       "cityCite":     "Apple Tree Cove"
     },
     {
@@ -47,5 +47,5 @@
       "category":     "town",
       "cityImg":      "<img src=\"https:\/\/scontent.xx.fbcdn.net/v/t1.0-9/486224_10151271684505091_2145890723_n.jpg?oh=fb0d8d0e7185cbeb802352858f2bd9e5&oe=57AA7AFA\" >",
       "cityCite":     "with my husband at a winery near Leavenworth"
-    },
+    }
 ]
