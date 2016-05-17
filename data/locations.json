@@ -1,0 +1,51 @@
+[
+    {
+      "cityName":     "Seattle",
+      "body":         "Global tech city brimming with coffee afficionados, lumbersexuals, and Californians.  This is the place to come if you want to get the best bang for your buck working in tech--cheaper than our southern friends cities.  Everywhere you go in Seattle, you will find unusual and defiant Americans:  from socialists to billionaires; come one, come all of those people that love a vibrant metropolis with parks and lakes and hills.  Big hills.",
+      "category":     "city",
+      "cityImg":      "<img src=\"https:\/\/scontent.xx.fbcdn.net/v/t1.0-9/10511134_10204170663007688_5920731641637673848_n.jpg?oh=5bddc07cb2442fc4ac1a8ad61492ce14&oe=57AEC6AD\" >",
+      "cityCite":     "view toward the Space Needle from Lake Union"
+    },
+    {
+      "cityName":     "Vancouver",
+      "body":         "Worlds most expensive city and hub for Asian nationals in North America, teeming with Maseratis and poutine.",
+      "category":     "city",
+      "cityImg":      "<img src=\"https:\/\/scontent.xx.fbcdn.net/v/l/t1.0-9/13119116_10154975364569152_4732056519608121902_n.jpg?oh=7e7b3b71d0b8f14fb25874102d1b8ffd&oe=57A2561A\" >",
+      "cityCite":     "exploring Gastown with my husband and friend"
+    },
+    {
+      "cityName":     "Bainbridge Island",
+      "body":         "Quaint island community a 30 minute ferry ride away from the heart of downtown Seattle.  Explore its beauty on a sunny day and youll begin truly to appreciate the beautiful Puget Sound and Pacific Northwest.",
+      "category":     "town",
+      "cityImg":      "<img src=\"https:\/\/scontent.xx.fbcdn.net/v/t1.0-9/521956_3469022815978_2051955190_n.jpg?oh=aeb4c21803e48e5d8de922ce579bbf33&oe=57A01CA9\" >",
+      "cityCite":     "sailing with my husband and father-in-law off the coast of Bainbridge Island",
+    },
+    {
+      "cityName":     "Victoria",
+      "body":         "The provincial capital of British Columbia located on Vancouver Island is a world away from bustling Vancouver.  It boasts the second oldest Chinatown on the Pacific coast after San Francisco, some of the oldest European-styled castles in North America, and has a wonderful nickname:  the home for the newlywed and nearly dead, inspired by its demographics of young couples and really old people and basically no one else.",
+      "category":     "town",
+      "cityImg":      "<img src=\"https:\/\/scontent.xx.fbcdn.net/v/t1.0-9/397972_4081183999625_366632631_n.jpg?oh=6c9f51c5bc73da607bb222735029c21f&oe=57E004E0\" >",
+      "cityCite":     "the Parliament Building from Victoria Harbour"
+    },
+    {
+      "cityName":     "Kingston",
+      "body":         "Jamaica?  No--Washington.  A small port town on the Kitsap peninsula with tremendous charm and natural beauty.",
+      "category":     "town",
+      "cityImg":      "<img src=\"file:\/\/\/Users\/seanchampagne\/Desktop\/Screen%20Shot%202016-04-28%20at%209.11.49%20PM.png/\" >",
+      "cityCite":     "Apple Tree Cove"
+    },
+    {
+      "cityName":     "Bellingham",
+      "body":         "Aint no party like a college town party because a college town party means you will meet adults that still think theyre in high school anywhere you go.  Now that I sold it to you like that, Bellingham has some stunning natural landscapes directly south of the Canadian border.",
+      "category":     "town",
+      "cityImg":      " <img src=\"https:\/\/scontent.xx.fbcdn.net/v/t1.0-9/38472_1309233102585_2827056_n.jpg?oh=d2a08f9ba79f4bfd0ede1e09cc76ddba&oe=57996AA1\" >",
+      "cityCite":     "Boulevard Park walkway"
+    },
+    {
+      "cityName":     "Leavenworth",
+      "body":         "A Bavarian railroad town in the desert side of the Cascade Mountain Range foothills, it is a charming faux-German village with a much different vibe than Western Washington State for being so close.  Do not be fooled by the rural feel, some of the best wine grapes in the world are grown in Eastern Washington State.  It is great going east of the Cascade Mountains to drink wine.",
+      "category":     "town",
+      "cityImg":      "<img src=\"https:\/\/scontent.xx.fbcdn.net/v/t1.0-9/486224_10151271684505091_2145890723_n.jpg?oh=fb0d8d0e7185cbeb802352858f2bd9e5&oe=57AA7AFA\" >",
+      "cityCite":     "with my husband at a winery near Leavenworth"
+    },
+]

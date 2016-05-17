@@ -1,13 +1,18 @@
 var nwDestinations = [];
 var myPortfolioArray = [];
+var locationView = {};
+
+locationView.initIndexPage = function() {
+  nwLocations.all.forEach(function(a) {
+    $('#nwlocations').append(a.toHtml($('#nwlocations-template')));
+  });
+};
 
 function nwLocations(ele) { //HANDLEBAR USAGE NOW USED
   for (key in ele) this[key] = ele[key];
 };
 
-function myPortfolio(ele) {
-  for (key in ele) this[key] = ele[key];
-};
+nwLocations.all = [];
 
 nwLocations.prototype.toHtml = function() {
   var $source = $('#nwlocations-template').html();
@@ -15,28 +20,52 @@ nwLocations.prototype.toHtml = function() {
   var compiledTemplate = template(this);
   return compiledTemplate;
 };
+nwLocations.loadAll = function(data) {
+  data.forEach(function(element) {
+    nwLocations.all.push(new nwLocations(element));
+  });
+};
+// nwDestinations.forEach(function(a) {
+//   $('#nwlocations').append(a.toHtml());
+// });
+nwLocations.fetchAll = function() {
+  if (localStorage.locations) {
+    console.log('hola');
+    nwLocations.loadAll(JSON.parse(localStorage.locations));
+    locationView.initIndexPage();
 
-portfolio.prototype.toHtml = function() {
-  var $source = $('#myPortfolio-template').html();
-  var template = Handlebars.compile($source);
-  return template(this);
+    $.ajax({
+      type: 'GET',
+      url: 'data/locations.json',
+      success: function(data, message, xhr) {
+        var eTag = xhr.getResponseHeader('eTag');
+      }
+    });
+  } else {
+    console.log('hi');
+    $.getJSON('/data/locations.json', function(data) {
+      nwLocations.loadAll(data);
+      localStorage.locations = JSON.stringify(data);
+      locationView.initIndexPage();
+    });
+  }
 };
 
-myNWLocations.forEach(function(element) {
-  nwDestinations.push(new nwLocations(element));
-});
-
-myPortfolio.forEach(function(element) {
-  myPortfolioArray.push(new portfolio(element));
-});
-
-nwDestinations.forEach(function(a) {
-  $('#nwlocations').append(a.toHtml());
-});
-
-myPortfolioArray.forEach(function(a) {
-  $('#myPortfolio').append(a.toHtml());
-});
+// function myPortfolio(ele) {
+//   for (key in ele) this[key] = ele[key];
+// };
+//
+// portfolio.prototype.toHtml = function() {
+//   var $source = $('#myPortfolio-template').html();
+//   var template = Handlebars.compile($source);
+//   return template(this);
+// };
+// myPortfolio.forEach(function(element) {
+//   myPortfolioArray.push(new portfolio(element));
+// });
+// myPortfolioArray.forEach(function(a) {
+//   $('#myPortfolio').append(a.toHtml());
+// });
 
 handleLeftDivAbout = function() {
 
