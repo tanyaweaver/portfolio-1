@@ -25,6 +25,7 @@ cite {
   color: indianred;
   font-size: 200%;
   padding: 3%;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 img {
   width: 80%;
