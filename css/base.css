@@ -1,0 +1,115 @@
+aside {
+  height: 100%;
+  width: 20%;
+  float: left;
+  position: fixed;
+  border-right-style: dotted;
+  padding: 30px;
+  margin: left;
+  font-family: sans-serif, Helvetica;
+  text-align: center;
+}
+main {
+  height: 100%;
+  width: 70%;
+  float: right;
+  padding: 20px;
+  font-family: sans-serif, Helvetica;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+cite {
+  color: indianred;
+  font-size: 200%;
+  padding: 3%;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+img {
+  width: 80%;
+  height: 80%;
+  z-index: 1;
+  border-style: double;;
+  color: indianred;
+  border-width: thick;
+}
+span {
+  display: block;
+  padding: 50px;
+}
+table {
+  width: 300px;
+  border: solid;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+
+td {
+  border: solid;
+  border-top: thin;
+  padding: 10px;
+}
+
+tr {
+  border: solid;
+  border-width: thin;
+  padding: 10px;
+}
+
+form {
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  width: auto;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background: #000096;
+  color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+form {
+  padding: 5%;
+  padding-left: 0;
+  margin-right: 15%;
+  color: #52a470;
+  font-family: monospace;
+}
+fieldset {
+  padding: 5%;
+}
+legend {
+  font-size: 200%;
+}
+input {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+label {
+  font-size: 150%;
+  padding-left: 42%;
+  padding-right: 50%;
+}
+textarea {
+  margin-top: 3%;
+  margin-left: 42%;
+  margin-right: 50%;
+}

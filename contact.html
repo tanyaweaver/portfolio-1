@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact Form</title>
+  <title>Champagne Web Pages</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/icon.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/module.css">
 </head>
 <body>
+  <aside>
+    <p id="topLeft">Opinionated.  Sophisticated.  Uncomplicated.</p>
+    <div class="mainNav">
+<ul>
+  <li><a href="index.html">About Me</a></li>
+  <li><a href="contact.html">Contact Sean</a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>
+
+</ul>
+    </div>
+  </aside>
+  <main>
+    <img id="chelsea" src="https://scontent.xx.fbcdn.net/v/t1.0-9/487206_10151624385140091_244544130_n.jpg?oh=1c46197b5eef74a2a966c9d416b1a5c2&oe=57D92A17" >
+    <cite>The Highline Park, Chelsea, New York City</cite>
+    <div class="hiddenNav">
+<ul>
+  <li><a href="index.html">About Me</a></li>
+  <li><a href="contact.html">Contact Sean</a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>
+</ul>
+    </div>
   <form name='contact' type='submit' id='contact' method='post' action='mailto:champagne.sean@gmail.com' >
   <fieldset>
     <legend>Contact</legend>
-    Thank you for reaching out to me. <br>
+    Thank you for reaching out to me. <br><br><br>
     <label for='name'>Name:</label>
     <input type='text' name='name' placeholder='Enter Name'>
 
-    <label for='mail'>eMail</label>
+    <label for='mail'>email:</label>
     <input type='email' id='email' placeholder='Enter email address' >
 
     <label for='inquiry'>Inquiry:</label>
-    <textarea name="inquiry" placeholder="Thank you for contacting me.  Please enter your message here."></textarea>
+    <textarea name="inquiry" placeholder="Message here"></textarea>
 
     <input id='submitBtn' type="submit" value="Submit Inquiry">
   </fieldset>
 </form>
+<div id="socialMe">
+  <p>Hello!  Feel free to follow me on Instagram, and review my LinkedIn or Github pages.</p>
+</div>
+<div class="socialIcon">
+  <a href="https://www.facebook.com/seanchampagne" class="icon-facebook2"></a>
+<a href="https://www.instagram.com/seanchampagne/" class="icon-instagram"></a>
+<a href="https://twitter.com/1MrChampagne" class="icon-twitter"></a>
+<a href="https://www.linkedin.com/in/seanchampagne" class="icon-linkedin"></a>
+<a href="https://github.com/Champagne91" class="icon-github"></a>
+  <div>
+</main>
   <script src="app.js"></script>
 </body>
 </html>
