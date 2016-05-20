@@ -24,31 +24,32 @@
   //   $('#nwlocations').append(a.toHtml());
   // });
   nwLocations.fetchAll = function() {
-    if (localStorage.locations) {
-      console.log('hola');
-      nwLocations.loadAll(JSON.parse(localStorage.locations));
-      locationView.initIndexPage();
-
-      $.ajax({
-        type: 'GET',
-        url: 'data/locations.json',
-        success: function(data, message, xhr) {
-          var eTag = xhr.getResponseHeader('eTag');
+    var eTag;
+    $.ajax({
+      type: 'HEAD',
+      url: '../data/locations.json',
+      success: function(data, message, xhr) {
+        eTag = xhr.getResponseHeader('eTag');
+        if(!localStorage.locations || eTag !== localStorage.eTag) {
+          $.getJSON('../data/locations.json', function(data1) {
+            console.log('yolo, getting json data and sending it to local storage');
+            localStorage.eTag = eTag; //saving new eTag TO local storage
+            nwLocations.loadAll(data1);
+            localStorage.locations = JSON.stringify(data1);
+            // eTag = JSON.parse(localStorage.eTag); getting eTag FROM local storage
+            locationView.initIndexPage();
+          });
+        } else {
+          console.log('hola, getting info from local storgae because eTag has not changed');
+          nwLocations.loadAll(JSON.parse(localStorage.locations));
+          locationView.initIndexPage();
         }
-      });
-    } else {
-      console.log('hi');
-      $.getJSON('/data/locations.json', function(data) {
-        console.log('yolo');
-        nwLocations.loadAll(data);
-        localStorage.locations = JSON.stringify(data);
-        locationView.initIndexPage();
-      });
-    }
+      }
+    });
   };
 
   locationView.initIndexPage = function() {
-    console.log('yolo');
+    console.log('yolo, rendering locations to the page');
     nwLocations.all.forEach(function(a) {
       $('#nwlocations').append(a.toHtml($('#nwlocations-template')));
     });
